@@ -1,0 +1,49 @@
+Create Table Product_Details(
+Product_Id number Primary Key,
+Product_Name varchar2(20) not null,
+Min_Qty number not null,
+cost number(8,2) not null,
+color varchar2(10) not null);
+
+Create Table Store(
+Store_Id number primary key,
+Store_Name varchar2(20) not null,
+Address varchar2(50) not null,
+lat number(8,6) not null,
+long number(8,6) not null);
+
+Create table Store_product(
+Store_Id number,
+Product_Id number,
+curr_Qty number not null,
+Status varchar2(10),
+primary key(Store_Id,Product_Id),
+Foreign key(Store_Id) references Store(Store_Id),
+Foreign key(Product_Id) references Product_Details(Product_Id));
+
+Create table Warehouse(
+Product_Id number Primary key,
+Qty Number not null,
+Foreign Key(Product_Id) References Product_Details(Product_Id));
+
+Create Table Customer(
+Cust_Id number primary key,
+Cust_Name varchar2(20) not null,
+email_id varchar2(30) unique not null,
+pswd varchar2(15) not null,
+Cust_Address varchar2(40) not null,
+Phn_no number,
+lat number(8,6) not null,
+long number(8,6) not null
+);
+
+Create Table Order_Details(
+Cust_Id number,
+Store_Id number,
+Product_Id number,
+Qty number not null,
+Order_Date Date not null,
+Primary key(Cust_Id, Store_Id,Product_Id),
+Foreign Key (Cust_Id) References Customer (Cust_Id),
+Foreign Key (Store_Id) References Store (Store_Id),
+Foreign Key (Product_Id) References Product_Details (Product_Id));

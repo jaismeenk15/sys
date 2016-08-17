@@ -1,0 +1,89 @@
+1.
+insert into product_details values(
+101,'Samsung Note 3',15,25000,'Golden');
+
+insert into product_details values(
+102,'Iphone 6s',20,60000,'Golden');
+
+insert into product_details values(
+103,'Iphone 6s',15,60000,'White');
+
+insert into product_details values(
+101,'Iphone 6',20,50000,'White');
+
+2.
+insert into store values(
+1,'Madhapur','md',17.448293,78.39149);
+
+insert into store values(
+2,'Kondapur','kp',17.462210,78.35685);
+
+insert into store values(
+3,'Jublie Hills','jh',17.432523,78.40702);
+
+3.
+insert into store_product values(
+1,101,20,'in stock');
+
+insert into store_product values(
+1,102,20,'in stock');
+
+insert into store_product values(
+1,103,16,'in stock');
+
+insert into store_product values(
+1,104,22,'in stock');
+
+insert into store_product values(
+2,101,17,'in stock');
+
+insert into store_product values(
+2,102,22,'in stock');
+
+insert into store_product values(
+2,103,17,'in stock');
+
+insert into store_product values(
+2,104,24,'in stock');
+
+insert into store_product values(
+3,101,18,'in stock');
+
+insert into store_product values(
+3,102,24,'in stock');
+
+insert into store_product values(
+3,103,15,'in stock');
+
+insert into store_product values(
+3,104,21,'in stock');
+
+4.
+insert into warehouse values(
+101,500);
+
+insert into warehouse values(
+102,700);
+
+insert into warehouse values(
+103,1500);
+
+insert into warehouse values(
+104,1000);
+
+5.
+insert into customer values(
+1001,'Jaismeen','jaismeen_12@gmail.com','abc@123','Kondapur',9453790871,17.451,78.377);
+
+insert into customer values(
+1002,'Ankur','ankur.93@gmail.com','wsmk#@','Jublie Hills',9135267832,17.422175,78.436515);
+
+insert into customer values(
+1003,'Leepakshi','leepakshi_bindra@hotmail.com','dhje#@23.','Madhapur',9725479200,17.493972,78.358593);
+
+insert into customer values(
+1004,'Shruthi','shruthi.94@outlook.com','ghrjt!#@','Gachibowli',9332247610,17.44008,78.348917);
+
+6.
+insert into order_details values(
+1001,1,102,1,'17-Aug-16');
