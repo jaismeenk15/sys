@@ -9,7 +9,7 @@ insert into product_details values(
 103,'Iphone 6s',15,60000,'White');
 
 insert into product_details values(
-101,'Iphone 6',20,50000,'White');
+104,'Iphone 6',20,50000,'White');
 
 2.
 insert into store values(
