@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+		
+		SEARCH:<input type="search" name="googlesearch"><br><br><br>
+		<br>
+		<table>
+		
+		<tr>FILTERS:</tr> 
+		<tr><td>Cost:<td><input type="radio" name="cost" value="below" checked onclick=""> Below 25000</td><br>
+  				<tr><td><td><input type="radio" name="cost" value="between" onclick=""> Above 25000</td></tr><br>
+		<tr><td>Colour:<td><input type="radio" name="colours" value="white" checked onclick=""> White<br>
+  				<tr><td><td><input type="radio" name="colours" value="gold" onclick=""> Gold<br>
+  			</tr></table>	
+		
+		
+	</form>
+</body>
+</html>
