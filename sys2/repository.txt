@@ -34,7 +34,7 @@ pswd varchar2(15) not null,
 Cust_Address varchar2(40) not null,
 Phn_no number,
 lat number(9,6) not null,
-long number(9,6) not null
+longt number(9,6) not null
 );
 
 Create Table Order_Details(
